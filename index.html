@@ -8,12 +8,20 @@
     </head>
     <body> 
 
-   <div>
-
+   
 
    <div style = "border: soild; position:absolute; top: 50%; left: 50%; 
-transform: translate(-50%, -50%); border: 2px solid black; padding: 16px;">
+transform: translate(-50%, -50%); border: 10px solid black; padding: 16px;">
     
+    <div id="welcome">
+
+    <p id="welcomeheader"> 
+		Handle
+	</p>
+
+    </div>
+
+
     <h1>Welcome to my Os Page</h1>
     <h2>Introduction:</h2>
     <p> Hello World, my name is Manvik Vandanapu and I'm 14 years old. <br>
@@ -25,20 +33,15 @@ transform: translate(-50%, -50%); border: 2px solid black; padding: 16px;">
       Time
     </p>
 
-    <script >
-
-    function updateTime() {
-        var currentTime = new Date().toLocaleString();
-        var timeText = document.querySelector("#timeElement");
-        timeText.innerHTML = currentTime;
-    }
-    setInterval(updateTime, 1000);
-
-    </script>
+    <script src="script.js"> </script>
+   
+    
     </div>
+
+   
     
 
-    </div>
+    
 
     </body>
 
