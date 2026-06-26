@@ -4,25 +4,28 @@
 
     <head> 
         <title>My first WebOS</title>
-    
+        <link rel="icon" type="image/png" herf ="favicon 2.png">
     </head>
     <body> 
-   
+
+   <div>
+
+
    <div style = "border: soild; position:absolute; top: 50%; left: 50%; 
-transform: translate(-50%, -50%);">
+transform: translate(-50%, -50%); border: 2px solid black; padding: 16px;">
     
     <h1>Welcome to my Os Page</h1>
     <h2>Introduction:</h2>
     <p> Hello World, my name is Manvik Vandanapu and I'm 14 years old. <br>
         This is my first WebOs Page. On this web page is a calculator, <br>
-        icons with my many memes, and many more stuff, <br>Hope you like it.
+        icons with many memes, and many more stuff, <br>Hope you like it.
     </p>
    
     <p id="timeElement">
       Time
     </p>
 
-    <script>
+    <script >
 
     function updateTime() {
         var currentTime = new Date().toLocaleString();
@@ -32,6 +35,9 @@ transform: translate(-50%, -50%);">
     setInterval(updateTime, 1000);
 
     </script>
+    </div>
+    
+
     </div>
 
     </body>
