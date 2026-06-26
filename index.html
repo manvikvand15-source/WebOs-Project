@@ -7,15 +7,32 @@
     
     </head>
     <body> 
-
+   
+   <div style = "border: soild; position:absolute; top: 50%; left: 50%; 
+transform: translate(-50%, -50%);">
+    
     <h1>Welcome to my Os Page</h1>
     <h2>Introduction:</h2>
     <p> Hello World, my name is Manvik Vandanapu and I'm 14 years old. <br>
-        This is my first Webos Page. In this web page is a calculator, <br>
-        and many more stuff, <br>Hope you like it.
+        This is my first WebOs Page. On this web page is a calculator, <br>
+        icons with my many memes, and many more stuff, <br>Hope you like it.
+    </p>
+   
+    <p id="timeElement">
+      Time
     </p>
 
+    <script>
 
+    function updateTime() {
+        var currentTime = new Date().toLocaleString();
+        var timeText = document.querySelector("#timeElement");
+        timeText.innerHTML = currentTime;
+    }
+    setInterval(updateTime, 1000);
+
+    </script>
+    </div>
 
     </body>
 
